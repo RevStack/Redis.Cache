@@ -1,0 +1,19 @@
+{
+  "name": "RevStack.Redis.Cache",
+  "version": "0.9.0",
+  "description": "A Redis implementation of RevStack.Cache",
+  "main": "RevStack.Redis.sin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStack/Redis.Cache.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RevStack/Redis.Cache/issues"
+  },
+  "homepage": "https://github.com/RevStack/Redis.Cache"
+}
