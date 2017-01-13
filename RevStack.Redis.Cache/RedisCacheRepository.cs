@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Caching;
+using System.Linq.Expressions;
 using ServiceStack.Redis;
 using ServiceStack.Redis.Generic;
 using RevStack.Pattern;
 using RevStack.Cache;
-using System.Linq.Expressions;
 
 namespace RevStack.Redis.Cache
 {
@@ -37,6 +37,7 @@ namespace RevStack.Redis.Cache
         #region "Public"
         public RedisCacheRepository(RedisDataContext context)
         {
+            
             _client = context.Client();
             _typedClient = _client.As<RedisCacheEntity<TEntity>>();
             setDomain();
