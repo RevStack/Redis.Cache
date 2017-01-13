@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RevStack.Redis.Cache</id>
+    <version>1.0.0</version>
+    <title>RevStack.Redis.Cache</title>
+    <authors>Scott Francis, MIS Interactive</authors>
+    <owners>D. Sheets, S. Francis</owners>
+    <licenseUrl>https://github.com/RevStack/Redis.Cache/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/RevStack/Redis.Cache.git</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Redis implementation of RevStack.Cache</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>RevStack Redis Cache</tags>
+  </metadata>
+</package>
