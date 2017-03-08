@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RevStack.Redis.Cache
 {
-    internal class RedisCacheEntity<TEntity>
+    public class RedisCacheEntity<TEntity>
     {
         public string Id { get; set; }
         public string Domain { get; set; }
