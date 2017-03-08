@@ -146,7 +146,7 @@ namespace RevStack.Redis.Cache
         #region "Private"
         private void setDomain()
         {
-            _domain = AppDomain.CurrentDomain.FriendlyName;
+            _domain = typeof(TEntity).FullName;
             _policy = new CacheItemPolicy();
             _policy.AbsoluteExpiration = DateTimeOffset.Now.AddHours(_hours);
         }
