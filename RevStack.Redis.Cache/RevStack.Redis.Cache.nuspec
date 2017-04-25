@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>RevStack.Redis.Cache</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>RevStack.Redis.Cache</title>
     <authors>Scott Francis, MIS Interactive</authors>
     <owners>D. Sheets, S. Francis</owners>

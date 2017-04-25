@@ -10,5 +10,6 @@ namespace RevStack.Redis.Cache
         public TEntity Entity { get; set; }
         public IEnumerable<TEntity> Collection { get; set; }
         public DateTime AbsoluteExpiration { get; set; }
+        public DateTime LastCacheWriteTime { get; set; }
     }
 }
