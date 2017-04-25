@@ -29,7 +29,7 @@ namespace RevStack.Redis.Cache
             set
             {
                 _hours = value;
-                _policy.AbsoluteExpiration = DateTimeOffset.Now.AddHours(_hours);
+                //_policy.AbsoluteExpiration = DateTimeOffset.Now.AddHours(_hours);
             }
         }
 
@@ -47,7 +47,7 @@ namespace RevStack.Redis.Cache
         {
             string id = _domain + key;
             var entity = _typedClient.GetById(id);
-            if (DateTime.Now > _policy.AbsoluteExpiration)
+            if (DateTime.Now > entity.AbsoluteExpiration)
             {
                 _typedClient.Delete(entity);
                 return null;
@@ -63,7 +63,7 @@ namespace RevStack.Redis.Cache
         {
             string id = _domain + key;
             var entity = _typedClient.GetById(id);
-            if (DateTime.Now > _policy.AbsoluteExpiration)
+            if (DateTime.Now > entity.AbsoluteExpiration)
             {
                 _typedClient.Delete(entity);
                 return null;
@@ -147,8 +147,8 @@ namespace RevStack.Redis.Cache
         private void setDomain()
         {
             _domain = typeof(TEntity).FullName;
-            _policy = new CacheItemPolicy();
-            _policy.AbsoluteExpiration = DateTimeOffset.Now.AddHours(_hours);
+            //_policy = new CacheItemPolicy();
+            //_policy.AbsoluteExpiration = DateTimeOffset.Now.AddHours(_hours);
         }
         #endregion
     }
